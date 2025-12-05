@@ -1,4 +1,4 @@
-with open('./inputs/4.input', 'r') as f:
+with open('2025//inputs/4.input', 'r') as f:
     lines = f.read().split('\n')
 
 grid = [['.' for _ in range(141)] for _ in range(141)]

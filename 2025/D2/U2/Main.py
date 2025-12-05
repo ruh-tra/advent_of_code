@@ -1,6 +1,6 @@
 from math import log10, ceil
 
-with open('./inputs/2.input', 'r') as f:
+with open('2025/inputs/2.input', 'r') as f:
     ids = f.read().strip().split(',')
 
 ids = [id.split('-') for id in ids]

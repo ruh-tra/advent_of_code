@@ -1,10 +1,10 @@
-package J;
+package D1.U1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class J1_1 {
+public class Main {
     public static void main(String[] args) {
         File file = new File("./inputs/1.input");
         int password = 0;
