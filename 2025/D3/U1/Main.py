@@ -1,4 +1,4 @@
-with open('2025/inputs/3.input', 'r') as f:
+with open('inputs/3.input', 'r') as f:
     lines = f.read().strip().split('\n')
 
 joltage = 0

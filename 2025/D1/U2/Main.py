@@ -2,7 +2,7 @@ password = 0
 current = 50
 prev = current
 
-with open('2025/inputs/1.input', 'r') as f:
+with open('inputs/1.input', 'r') as f:
     lines = f.read().split('\n')
 
 for line in lines:

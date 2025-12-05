@@ -1,6 +1,6 @@
 from math import log10, ceil
 
-with open('2025/inputs/2.input', 'r') as f:
+with open('inputs/2.input', 'r') as f:
     ids = f.read().strip().split(',')
 
 ids = [id.split('-') for id in ids]
@@ -8,7 +8,7 @@ ids = [id.split('-') for id in ids]
 invalid = []
 
 def find_invalid_ids(lower, higher):
-    invalids = []
+    invalids = set()
 
     primes = set()
 
@@ -17,11 +17,11 @@ def find_invalid_ids(lower, higher):
             primes.add(n)
     
     for n in range(lower, higher):
-        for k in primes.intersection(range(ceil(log10(n)))):
-                partition = int(k * str(n)[:ceil(log10(n)) // k])
+        for k in primes.intersection(range(1 + ceil(log10(n)))):
+            partition = int(k * str(n)[:ceil(log10(n)) // k])
                
-                if partition == n:
-                    invalids.append(partition)
+            if partition == n:
+                invalids.add(partition)
 
     return invalids
 
